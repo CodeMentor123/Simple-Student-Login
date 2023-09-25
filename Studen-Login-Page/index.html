@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Login</title>
+    <style>
+        /*Apply some basic styles to the entire page*/
+        body{
+            font-family: Arial,sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Style for the Login Container */
+        .login-container{
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+        }
+
+        /* Style for the Login Form Title */
+        .login-container h2{
+            margin-bottom: 20px;
+        }
+
+        /* Style for the Form Field Groups */
+        .form-group{
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        /* Style for form field labels */
+        .form-group label{
+            font-weight: bold;
+        }
+
+        /* Style for form input fields */
+        .form-group input{
+            width: 37dvh;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        /* Style for the login button */
+        .btn-login{
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- Login Container -->
+    <div class="login-container">
+
+        <!-- Login Form Title -->
+        <h2>Student Login</h2>
+
+        <!-- Login Form -->
+        <form action="#">
+            <!-- Form Field for Username -->
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+
+            <!-- Form Field for Password -->
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <!-- Login Button -->
+            <button type="submit" class="btn-login">Login</button>
+        </form>
+    </div>
+</body>
+</html>
